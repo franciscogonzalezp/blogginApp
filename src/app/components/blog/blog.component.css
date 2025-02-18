@@ -1,0 +1,18 @@
+.blog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .blog-content {
+    flex-direction: row;
+  }
+
+  .blog_form {
+    flex-basis: 30%;
+  }
+
+  .blog_post {
+    flex-basis: 80%;
+  }
+}
