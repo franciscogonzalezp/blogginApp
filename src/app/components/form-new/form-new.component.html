@@ -1,0 +1,28 @@
+<aside class="form">
+  <form  [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="title">Titulo</label>
+    <input type="text" name="title" formControlName="title" [class.inputError]="hasError('title')">
+    @if(hasError('title')) {
+      <p class="formControl_error">{{getMessageError('titulo')}}</p>
+    }
+    <label for="image">Imagen</label>
+    <input type="text" name="image" formControlName="image" [class.inputError]="hasError('image')">
+    @if(hasError('image')) {
+      <p class="formControl_error">{{getMessageError('imagen')}}</p>
+    }
+
+    <label for="message">Mensaje</label>
+    <textarea type="text" name="message" formControlName="message" [class.inputError]="hasError('message')"></textarea>
+    @if(hasError('message')) {
+      <p class="formControl_error">{{getMessageError('mensaje')}}</p>
+    }
+
+    <label for="date">Fecha</label>
+    <input type="date" name="date" formControlName="date" [class.inputError]="hasError('date')">
+    @if(hasError('date')) {
+      <p class="formControl_error">{{getMessageError('fecha')}}</p>
+    }
+
+    <button type="submit" class="form_btn" [disabled]="!form.valid" [class.btn_disabled]="!form.valid">Enviar</button>
+  </form>
+</aside>
