@@ -1,15 +1,6 @@
 <div class="blog-content">
   <section class="blog_form">
-    <!-- <aside>
-      <label for="title">Titulo</label>
-      <input type="text" name="title">
-
-      <label for="image">Imagen</label>
-      <input type="text" name="image">
-
-      <label for="body">Mensaje</label>
-      <input type="text" name="body">
-    </aside> -->
+    <app-form-new (newEventEmit)="getNew($event)"></app-form-new>
   </section>
 
   <section class="blog_post">
