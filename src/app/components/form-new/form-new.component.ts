@@ -37,7 +37,8 @@ export class FormNewComponent {
 
   onSubmit() {
     this.newPost = this.form.value
-    console.log("Enviando la nueva noticia: " , this.newPost )
     this.newEventEmit.emit(this.newPost)
+    this.form.reset();
+    this.newPost = {title: '', image: '', message: '', date: ''}
   }
 }
