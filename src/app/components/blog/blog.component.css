@@ -12,11 +12,11 @@
   }
 
   .blog_form {
-    flex-basis: 30%;
+    flex-basis: 25%;
     align-items: center;
   }
 
   .blog_post {
-    flex-basis: 70%;
+    flex-basis: 75%;
   }
 }

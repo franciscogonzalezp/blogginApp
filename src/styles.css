@@ -33,6 +33,7 @@ body {
   margin: 0;
   font-family: Vegur, 'PT Sans', Verdana, sans-serif;
   font-size: 16px;
+  background-color: rgb(245, 242, 238);
 }
 
 /* Set shorter line heights on headings and interactive elements */

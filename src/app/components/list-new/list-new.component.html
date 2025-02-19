@@ -1,0 +1,15 @@
+<div class="new_content">
+  @for(itemNew of listNews(); track itemNew.title){
+    <article class="card_new">
+      <img class="card_image" [src]="itemNew.image" [alt]="itemNew.title"/>
+      <div class="card_content">
+        <span class="card_date">({{itemNew.date}})</span>
+        <span class="card_title">{{itemNew.title}}</span>
+        <p class="card_message">{{itemNew.message}}</p>
+      </div>
+    </article>
+  } @empty {
+    <p>No hay noticias que mostrar</p>
+  }
+</div>
+
