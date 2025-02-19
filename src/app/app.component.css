@@ -1,0 +1,14 @@
+
+.header {
+  background-color: rgb(43, 75, 76);
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  background-color: rgb(43, 75, 76);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: .8em;
+}

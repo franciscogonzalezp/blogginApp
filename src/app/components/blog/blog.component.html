@@ -1,0 +1,9 @@
+<div class="blog-content">
+  <section class="blog_form">
+    <app-form-new (newEventEmit)="getNew($event)"></app-form-new>
+  </section>
+
+  <section class="blog_post">
+    <app-list-new [listNews]="listNews"></app-list-new>
+  </section>
+</div>

@@ -1,0 +1,46 @@
+.form {
+  background-color: rgb(46, 65, 65);
+  border-radius: 10px;
+  padding: 25px 20px;
+  color: white;
+}
+
+.form input, label, textarea, button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  margin-bottom: 5px;
+}
+
+.form input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form_btn {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(69, 130, 243);
+  border: 0px;
+
+}
+
+.btn_disabled {
+  color: rgb(218, 218, 218);
+  background-color: rgba(100, 148, 237, 0.519);
+}
+
+.formControl_error {
+  font-size: .7em;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.inputError {
+  border: 2px solid red;
+  border-radius: 5px;
+}
